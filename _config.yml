@@ -13,3 +13,8 @@ github_username:  cicthub
 
 # Build settings
 markdown: kramdown
+
+collections:
+  papers:
+      output: true
+      permalink: /papers/:path/

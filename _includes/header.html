@@ -1,9 +1,9 @@
-<header class="site-header">
+<!--<header class="site-header">
 
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    
+
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -25,3 +25,16 @@
   </div>
 
 </header>
+-->
+
+<div id="top-line"></div>
+
+<div class="container">
+	<header id="header">
+   {% include logo.html %}
+	 {% include social.html %}
+	</header>
+	<div class="clearfix"></div>
+</div>
+
+{% include primary-nav-items.html %}

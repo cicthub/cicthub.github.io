@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<!--<footer class="site-footer">
 
   <div class="wrapper">
 
@@ -53,3 +53,96 @@
   </div>
 
 </footer>
+-->
+
+
+
+<!-- Footer
+================================================== -->
+
+<!-- Footer / Start -->
+<footer id="footer">
+	<!-- 960 Container -->
+	<div class="container">
+
+		<!-- About -->
+		<div class="four columns">
+			<img id="logo-footer" src="/img/logo-footer.png" alt="" />
+			<p>All Is One!</p>
+
+		</div>
+
+		<!-- Contact Details -->
+		<div class="four columns">
+			<h4>Contact Details</h4>
+			<ul class="contact-details-alt">
+				<li><i class="halflings white map-marker"></i> <p><strong>Address:</strong> Milan, Italy</p></li>
+				<li><i class="halflings white user"></i> <p><strong>Phone:</strong>N/A</p></li>
+				<li><i class="halflings white envelope"></i> <p><strong>Email:</strong> <a href="#">cicthub@gmail.com</a></p></li>
+			</ul>
+		</div>
+
+		<!-- Photo Stream -->
+		<div class="four columns">
+			<h4>Photo Stream</h4>
+			<div class="flickr-widget">
+				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=72179079@N00"></script>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<!-- Twitter -->
+		<div class="four columns">
+			<h4>Twitter</h4>
+			<ul id="twitter"></ul>
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+					$.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=Vasterad&count=1'), function(tweets){
+						$("#twitter").html(tz_format_twitter(tweets));
+					}); });
+				</script>
+			<div class="clearfix"></div>
+		</div>
+
+	</div>
+	<!-- 960 Container / End -->
+
+</footer>
+<!-- Footer / End -->
+
+
+<!-- Footer Bottom / Start  -->
+<footer id="footer-bottom">
+
+	<!-- 960 Container -->
+	<div class="container">
+
+		<!-- Copyrights -->
+		<div class="eight columns">
+			<div class="copyright">
+				<a href="#">CICT Hub</a> Web Site is under MIT license.
+			</div>
+		</div>
+
+		<!-- Menu -->
+		<div class="eight columns">
+			<nav id="sub-menu">
+				<ul>
+					<li><a href="#">FAQ's</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+	<!-- 960 Container / End -->
+
+</footer>
+<!-- Footer Bottom / End -->
+
+
+<!-- Style Switcher
+================================================== -->
+<link rel="stylesheet" href="/css/switcher.css">
+<script src="/js/switcher.js"></script>
