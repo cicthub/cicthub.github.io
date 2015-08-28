@@ -1,0 +1,85 @@
+<nav id="navigation" class="style-1">
+
+	<div class="left-corner"></div>
+	<div class="right-corner"></div>
+
+	<ul class="menu" id="responsive">
+
+		<li><a href="/" id="current"><i class="halflings white home"></i> Home</a></li>
+
+		<li><a href="#"><i class="halflings white download"></i> Downloads</a>
+
+			<ul class="cols3">
+				<li class="col3">
+					<h4>Get involved!</h4>
+				</li>
+				<li class="col1">
+					<h5>Papers by topics</h5>
+					<ol>
+						{% for paper in site.papers %}
+						<li><a href="{{ paper.url }}">{{ paper.title }}</a></li>
+						{% endfor %}
+					</ol>
+				</li>
+				<li class="col1">
+					<h5>Additional Resources</h5>
+					<ol>
+						<li><a href="faq.html">Images</a></li>
+						<li><a href="404-page.html">Matlab stuff</a></li>
+						<li><a href="left-sidebar.html">Tutorials</a></li>
+						<li><a href="right-sidebar.html">Others</a></li>
+					</ol>
+				</li>
+				<!--<li class="col1">
+				<h5>Paragraph</h5>
+				<p>This <a href="#">Mega Menu</a> can handle everything. Lists, paragraphs, forms...</p>
+			</li>-->
+			</ul>
+		</li>
+
+		<li><a href="#"><i class="halflings white user"></i> People</a>
+			<!-- Second Level / Start -->
+			<ul>
+				<li><a href="elements.html">Founders</a></li>
+				<li><a href="icons.html">Contributors</a></li>
+				<li><a href="pricing-tables.html">All is one!</a></li>
+				<!--<li><a href="typography.html">Typography</a></li>-->
+			</ul>
+			<!-- Second Level / End -->
+		</li>
+
+		<li><a href="#"><i class="halflings white calendar"></i> Events</a>
+			<!-- Second Level / Start -->
+			<!--<ul>
+			<li><a href="portfolio-2.html">2 Columns</a></li>
+			<li><a href="portfolio-3.html">3 Columns</a></li>
+			<li><a href="portfolio-4.html">4 Columns</a></li>
+			<li><a href="single-project.html">Single Project</a></li>
+		</ul>-->
+			<!-- Second Level / End -->
+		</li>
+
+		<li><a href="#"><i class="halflings white share-alt"></i> Mission</a>
+			<!-- Second Level / Start -->
+			<!--<ul>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="product-page.html">Product Page</a></li>
+		</ul>-->
+			<!-- Second Level / End -->
+		</li>
+
+		<!--<li><a href="#"><i class="halflings white pencil"></i> Blog</a>-->
+		<!-- Second Level / Start -->
+		<!--	<ul>
+			<li><a href="blog-large-image.html">Large Image</a></li>
+			<li><a href="blog-medium-image.html">Medium Image</a></li>
+			<li><a href="blog-post.html">Single Post</a></li>
+		</ul>-->
+		<!-- Second Level / End -->
+		<!--</li>-->
+
+		<li><a href="contact.html"><i class="halflings white envelope"></i> Contact</a></li>
+
+	</ul>
+</nav>
+<div class="clearfix"></div>

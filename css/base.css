@@ -15,7 +15,9 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline; }
+		vertical-align: baseline;
+		/*text-align: justify;
+	text-justify: inter-word; */}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -157,7 +159,7 @@
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: italic; }
-	strong { font-weight: 600; color: #333; }
+	strong { font-weight: 600; color: #333; line-height: 25px;}
 	small { font-size: 80%; }
 
 	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
