@@ -1,6 +1,30 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+	<div id="wrapper">
+		<div id="top-line"></div>
+		<div class="container">
+			{% include header.html %}
+		</div>
+		{% include menu.html %}
+		<div id="content">
+			{{ content }}
+		</div>
+	</div>
+	<!-- content -->
+	</div>
+	<!-- wrapper -->
+
+	{% include footer.html %}
+</body>
+
+</html>
 <!--<div class="container floated">
 	<div class="sixteen floated page-title">
 		<h2>{{ page.title }}</h2>
