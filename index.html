@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 
@@ -47,7 +47,7 @@ layout: page
 			<article class="icon-box">
 				<i class="icon-bullhorn"></i>
 				<h3>CICT</h3>
-				<p>The new modeling approach based on natural self organizing information.</p>
+				<p>Computational Information Conservation Theory: the new modeling approach based on natural self organizing information.</p>
 			</article>
 		</div>
 		<!-- Icon Box End -->
@@ -78,27 +78,86 @@ layout: page
 	<!-- Icon Boxes / End -->
 
 </div>
-
 <!-- LayerSlider / End -->
 
 
-<!--<div class="home">
+<div class="container floated">
+	<div class="blank floated">
 
-  <h1 class="page-heading">Posts</h1>
+		<!-- Recent Work Entire -->
+		<div class="four columns carousel-intro">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			<section class="entire">
+				<h3>Recent Contributions</h3>
+				<p>Last papers, code, images and generic assets shared by the community</p>
+			</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+			<div class="carousel-navi">
+				<div id="work-prev" class="arl jcarousel-prev"><i class="icon-chevron-left"></i></div>
+				<div id="work-next" class="arr jcarousel-next"><i class="icon-chevron-right"></i></div>
+			</div>
+			<div class="clearfix"></div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		</div>
 
+		<!-- jCarousel -->
+		<section class="jcarousel recent-work-jc">
+			<ul>
+				<!-- Recent Work Item -->
+				<li class="four columns">
+					<a href="#" class="portfolio-item">
+						<figure>
+							<img src="/img/portfolio/cells.jpg" alt=""/>
+							<figcaption class="item-description">
+								<h5>CICT Communitiy is growing up!</h5>
+								<span>Community</span>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<!-- Recent Work Item -->
+				<li class="four columns">
+					<a href="#" class="portfolio-item">
+						<figure>
+							<img src="/img/portfolio/cartesio.jpg" alt=""/>
+							<figcaption class="item-description">
+								<h5>Seeds of Growth</h5>
+								<span>Architecture</span>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<!-- Recent Work Item -->
+				<li class="four columns">
+					<a href="#" class="portfolio-item">
+						<figure>
+							<img src="/img/portfolio/E8_overlay_5sm.jpg" alt=""/>
+							<figcaption class="item-description">
+								<h5>Beautiful Flowers</h5>
+								<span>Identity</span>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<!-- Recent Work Item -->
+				<li class="four columns">
+					<a href="#" class="portfolio-item">
+						<figure>
+							<img src="/img/portfolio/school_book.jpg" alt=""/>
+							<figcaption class="item-description">
+								<h5>Poppy Flower</h5>
+								<span>Identity</span>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+			</ul>
+		</section>
+		<!-- jCarousel / End -->
+
+	</div>
 </div>
--->
